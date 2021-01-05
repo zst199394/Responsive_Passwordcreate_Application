@@ -1,9 +1,9 @@
 # Project Overview:JavaScript Password Generator
 
 ## Develop goal:
-![Password Generator page](./assets/03-javascript-homework-demo.png)
+![Password Generator page](./Assets/03-javascript-homework-demo.png)
 
-In this project ??,I am going to create an application that an employee can use to generate a random password based on criteria they’ve selected by modifying starter code. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes.
+In this project https://zst199394.github.io/Responsive_Passwordcreate_Application/.,I am going to create an application that an employee can use to generate a random password based on criteria they’ve selected by modifying starter code. This app will run in the browser, and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes.
 
 The password can include special characters.[list of Password Special Characters from the OWASP Foundation](https://www.owasp.org/index.php/Password_special_characters).
 ## Languages and Libraries Used
