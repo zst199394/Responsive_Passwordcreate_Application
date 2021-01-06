@@ -6,12 +6,13 @@ var symbols='@#$%&*+=?!<|>~/';
 
 // Add a series of prompts for password criteria
 // Make sure choose at leaset one type of characters
+function generatePassword(){
   var confirmLength = prompt("How long is your password?(8~128)");
-  // create if statement to check confirmLength is a num!!!!!! ??????????
+  // create if statement to check confirmLength is a num!!
   if(isNaN(confirmLength)){
     alert("You need to put a number!!!!!")
   } 
-  else if(isNaN(confirmLength)==false && confirmLength<8 && confirmLength>128){
+  else if(confirmLength<8 || confirmLength>128){
     alert("It has to be between 8 to 128 !!!");
   }
   else{
@@ -31,7 +32,7 @@ var symbols='@#$%&*+=?!<|>~/';
  
 // need to create function generatePassword
  //add the user choices to the options
-function generatePassword(){
+
   var options = '';
   if(confirmLowercase){
     options += lowercase;
