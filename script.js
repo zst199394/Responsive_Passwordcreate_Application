@@ -60,14 +60,7 @@ function generatePassword(){
   return password;
 }
 
-
-/*function generatePassword() {
-  var password = passwordBox[Math.floor(Math.random() * confirmLength)];
-  console.log(Password);
-}
-*/
-
-// Write password to the #password input ??????
+// Write password to the #password input
 var generateBtn = document.querySelector("#generate");
 function writePassword() {
   var password = generatePassword();
