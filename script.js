@@ -7,7 +7,7 @@ var special =["!","@","#","$","%","&","*","+","=","?","<",">"];
 
 // Add a series of prompts for password criteria
 // Make sure choose at leaset one type of characters
-function typeCharacter(){
+function choosePassword(){
   var confirmLength = prompt("How long is your password?(8~128)");
   if(isNaN(confirmLength) && confirmLength<8 && confirmLength>128){
     alert("It has to be between 8 to 128 !!!")
@@ -41,20 +41,18 @@ if (confirmSpecial){
   passwordBox.push(special);
   console.log(passwordBox);
 }
-}
-
-
 //create for loop 
 
 for (var i = 0; i < confirmLength; i++) {
 // need to create function generatePassword!!!!!
 var generatePassword = passwordBox[Math.floor(Math.random() * confirmLength)];
 }
+}
 
 // Write password to the #password input
 var generateBtn = document.querySelector("#generate");
 function writePassword() {
-  typeCharacter();
+  choosePassword();
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
@@ -63,4 +61,4 @@ function writePassword() {
 }
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener("click", writePassword )
