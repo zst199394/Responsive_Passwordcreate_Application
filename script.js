@@ -2,7 +2,7 @@
 var lowercase = 'abcdefghijklmnopqrstuvwxyz';
 var uppercase ='ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 var numbers ='0123456789';
-var special ='@#$%&*+=?!<|>~/';
+var symbols='@#$%&*+=?!<|>~/';
 
 // Add a series of prompts for password criteria
 // Make sure choose at leaset one type of characters
@@ -27,7 +27,7 @@ var special ='@#$%&*+=?!<|>~/';
   
  }
  else{
-  console.log("You already choose.")
+  console.log("You already choose password characters.");
  }
  
 // need to create function generatePassword
@@ -36,21 +36,26 @@ function generatePassword(){
   var options = '';
   if(confirmLowercase){
     options += lowercase;
+    console.log("You chosed lowercase~");
   }
   if(confirmUppercase){
     options += uppercase;
+    console.log("You chosed uppercase~");
   }
   if(confirmNumeric){
     options += numbers;
+    console.log("You chosed numbers~");
   }
   if(confirmSpecial){
-    options += special;
+    options += symbols;
+    console.log("You chosed symbols~");
   }
 
   var password ='';
   for (var i = 0; i < confirmLength; i++) {
       var random = Math.floor(Math.random()*confirmLength);
       password += options[random];
+      console.log(password);
   }
   return password;
 }
