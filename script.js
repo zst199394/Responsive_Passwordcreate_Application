@@ -8,12 +8,15 @@ var symbols='@#$%&*+=?!<|>~/';
 // Make sure choose at leaset one type of characters
 function generatePassword(){
   var confirmLength = prompt("How long is your password?(8~128)");
+  console.log(confirmLength);
   // create if statement to check confirmLength is a num!!
   if(isNaN(confirmLength)){
-    alert("You need to put a number!!!!!")
+    alert("You need to put a number!!!!!");
+    return;
   } 
   else if(confirmLength<8 || confirmLength>128){
     alert("It has to be between 8 to 128 !!!");
+    return;
   }
   else{
   var confirmLowercase = confirm("Do you want lowercase?");
@@ -55,7 +58,6 @@ function generatePassword(){
   for (var i = 0; i < confirmLength; i++) {
       var random = Math.floor(Math.random()*options.length);
       password += options[random];
-      console.log(password);
   }
   return password;
 }
@@ -66,7 +68,7 @@ function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
   passwordText.value = password;
-
+  console.log(password);
 }
 
 // Add event listener to generate button
