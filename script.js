@@ -6,7 +6,6 @@ var symbols='@#$%&*+=?!<|>~/';
 
 // Add a series of prompts for password criteria
 // Make sure choose at leaset one type of characters
-
   var confirmLength = prompt("How long is your password?(8~128)");
   // create if statement to check confirmLength is a num!!!!!! ??????????
   if(isNaN(confirmLength)){
@@ -53,7 +52,7 @@ function generatePassword(){
 
   var password ='';
   for (var i = 0; i < confirmLength; i++) {
-      var random = Math.floor(Math.random()*confirmLength);
+      var random = Math.floor(Math.random()*options.length);
       password += options[random];
       console.log(password);
   }
