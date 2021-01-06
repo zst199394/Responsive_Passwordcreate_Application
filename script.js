@@ -30,7 +30,7 @@ function generatePassword(){
   
  }
  else{
-  console.log("You already choose password characters.");
+  console.log("You already choose.Here is your password:");
  }
  
 // need to create function generatePassword
